@@ -4,6 +4,20 @@
 // ---------------------
 
 // Put your answer below -------------------------
+// myFunction('string', i) => ['string', 'string', 'string'];
+
+function myFunction(str, int) {
+  const newArray = [];
+  for (let i = 0; i < int; i++) {
+    newArray.push(str);
+  }
+  return newArray;
+}
+
+
+myFunction('sunshine', 3);//call the function with actual arguments in parentheses
+//myFunction('sunshine', 3); // ['sunshine', 'sunshine', 'sunshine'];
+
 
 
 
@@ -23,7 +37,11 @@
 
 // Put your answer below -------------------------
 
+function (arr) {
+    const newArray = [];
+    newArray.reverse
 
+}
 
 
 
