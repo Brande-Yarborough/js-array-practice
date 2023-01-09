@@ -1,5 +1,5 @@
 // ---------------------
-// Define a function that takes a string and an integer of i and creates a new array of length i where each value is equal to the string passed in
+// 1. Define a function that takes a string and an integer of i and creates a new array of length i where each value is equal to the string passed in
 // myFunction('sunshine', 3) => ['sunshine', 'sunshine', 'sunshine'];
 // ---------------------
 
@@ -31,7 +31,7 @@ myFunction('sunshine', 3);//call the function with actual arguments in parenthes
 // -----------------------------------------------
 
 // ---------------------
-// Define a function that takes an array and reverses all the values in an array
+// 2. Define a function that takes an array and reverses all the values in an array
 // The function should not mutate the original array
 // ---------------------
 
@@ -45,7 +45,7 @@ function reverse(arr) {
     return reverted;
 }
 
-reverse([1,2,3,4]);
+reverse([1,2,3,4]);//calling the function
 
 
 
@@ -57,7 +57,7 @@ reverse([1,2,3,4]);
 // -----------------------------------------------
 
 // ---------------------
-// Define a function that takes an array and removes all falsy values from the array
+// 3. Define a function that takes an array and removes all falsy values from the array
 // ---------------------
 
 // Put your answer below -------------------------
@@ -69,7 +69,7 @@ const filtered = array.filter(Boolean);//pass boolean constructor to filter meth
 return filtered;
 }
 
-removes([1, 2, 3]);
+removes([1, 2, 3]);//calling the function
 
 
 
@@ -78,14 +78,19 @@ removes([1, 2, 3]);
 // -----------------------------------------------
 
 // ---------------------
-// Define a function that takes an array of nested arrays and returns an object composed of propeties equal to each nested array
+// 4. Define a function that takes an array of nested arrays and returns an object composed of propeties equal to each nested array
 // const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
 // returns { name: 'Charlie', color: 'brown', age: 10 };
 // ---------------------
 
 // Put your answer below -------------------------
 
-
+function nested (arr) {
+    const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
+    const obj = Object.fromEntries(myArray);//Object.fromEntries() static method transforms a list of key-value pairs into an object
+    return obj;
+}
+nested();//calling the function
 
 
 
@@ -97,7 +102,7 @@ removes([1, 2, 3]);
 // -----------------------------------------------
 
 // ---------------------
-// Define a function that takes an array and removes duplicate values
+// 5. Define a function that takes an array and removes duplicate values
 // [1,2,3,4,5,4,3] should return [1,2,3,4,5]
 // ---------------------
 
@@ -115,7 +120,7 @@ removes([1, 2, 3]);
 // -----------------------------------------------
 
 // ---------------------
-// Define a function that takes two arrays and returns true if they have identical values (order does not matter), it should return false otherwise
+// 6. Define a function that takes two arrays and returns true if they have identical values (order does not matter), it should return false otherwise
 // [1,2,3,4] and [1,2,3,4] should return true
 // [1,2,3,4,5] and [1,2,3,4] should return false
 // [1,2,3,4] and [1,2,3,4,4] should return false
