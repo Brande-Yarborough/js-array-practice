@@ -37,11 +37,15 @@ myFunction('sunshine', 3);//call the function with actual arguments in parenthes
 
 // Put your answer below -------------------------
 
-function (arr) {
-    const newArray = [];
-    newArray.reverse
-
+function reverse(arr) {
+    // const newArray = [1, 2, 3];
+    const reverted = [...arr].reverse();// [...] creates a shallow copy, so reverse() does not mutate the original
+    // reverted[0] = 3;
+    // console.log(newArray[0]);
+    return reverted;
 }
+
+reverse([1,2,3,4]);
 
 
 
@@ -58,10 +62,14 @@ function (arr) {
 
 // Put your answer below -------------------------
 
+function removes (arr) {
+    const array = [ 0, 1, '', undefined, false, 2, undefined, null, , 3, NaN ];
+ 
+const filtered = array.filter(Boolean);//pass boolean constructor to filter method to filter out all falsy values.This works since boolean constructor returns false on any falsy values. 
+return filtered;
+}
 
-
-
-
+removes([1, 2, 3]);
 
 
 
