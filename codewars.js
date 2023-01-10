@@ -41,7 +41,18 @@ function flyBy(lamps, drone) {
 // Get the mean of an array
 // https://www.codewars.com/kata/563e320cee5dddcf77000158/train/javascript
 
+function getAverage(marks){
 
+    // calculates total number of marks
+    var total = 0;
+    for(var i = 0; i < marks.length; i++){
+      total += marks[i];
+    }
+    
+    /* returns total number of marks divided by number of marks
+       rounded down to nearest integer */
+    return Math.floor(total / marks.length);
+  }
 
 
 // #5
