@@ -9,7 +9,7 @@
 function myFunction(str, int) {
   const newArray = [];
   for (let i = 0; i < int; i++) {
-    newArray.push(str);
+    newArray.push(str); //pushing in value of sunshine (str) 3 times
   }
   return newArray;
 }
@@ -39,7 +39,7 @@ myFunction('sunshine', 3);//call the function with actual arguments in parenthes
 
 function reverse(arr) {
     // const newArray = [1, 2, 3];
-    const reverted = [...arr].reverse();// [...] creates a shallow copy, so reverse() does not mutate the original
+    const reverted = [...arr].reverse();// [...]spread operator creates a shallow copy, so reverse() does not mutate the original
     // reverted[0] = 3;
     // console.log(newArray[0]);
     return reverted;
@@ -72,6 +72,18 @@ return filtered;
 removes([1, 2, 3]);//calling the function
 
 
+/*other solution with for loop
+function removeFalsyValues(arr) {
+    const result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]); { 
+            result.push(arr[i]);
+        }
+    }
+    return result; 
+}
+*/
 
 
 
@@ -92,6 +104,16 @@ function nested (arr) {
 }
 nested();//calling the function
 
+/*other solution with for loop
+function createObj(arr) {
+   const result = {};
+
+   for (let i = 0; i < arr.length; i++) {
+        result[arr[i][0]] = arr[i][1];
+    }
+    return result;
+} */
+
 
 
 
@@ -107,6 +129,7 @@ nested();//calling the function
 // ---------------------
 
 // Put your answer below -------------------------
+
 function removeDuplicates () {
     const values = [1,2,3,4,5,4,3];
     const uniqueValues = [...new Set(values)]; //[...] creates a shallow copy, so it does not mutate the original
@@ -120,6 +143,17 @@ removeDuplicates();//calling the function
 
 //First, convert an array of duplicates to a Set. The new Set will implicitly remove duplicate elements.
 //Then, convert the set back to an array.
+
+/*other solution
+function removeDuplicates(arr) {
+    const result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if(result.indexOf(arr[i]) === -1) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}*/
 
 
 
@@ -151,6 +185,8 @@ if (arr1.length !== arr2.length) { //use strict inequality
 }
 
 identicalValues([1, 2, 3, 4], [1, 2, 3, 4]);
+
+
 
 
 
