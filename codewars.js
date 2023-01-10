@@ -13,7 +13,13 @@ var number = function(array) {
 // Filling an array (part 1)
 // https://www.codewars.com/kata/571d42206414b103dc0006a1/train/javascript
 
-
+function arr(n){
+    var newArr = [];
+    for(var i = 0; i < n; i++){
+      newArr.push(i);
+    }
+    return newArr;
+  }
 
 
 // # 3
