@@ -26,7 +26,15 @@ function arr(n){
 // Drone Fly-By
 // https://www.codewars.com/kata/58356a94f8358058f30004b5/train/javascript
 
-
+function flyBy(lamps, drone) {
+    var lampArr = lamps.split('');
+    for (let i=0; i < drone.length; i++) {
+      if (lampArr[i] === "x") {
+        lampArr.splice(i, 1, "o");
+      }
+    }
+    return lampArr.join('');
+  }
 
 
 // # 4
