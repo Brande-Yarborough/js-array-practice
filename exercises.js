@@ -107,11 +107,19 @@ nested();//calling the function
 // ---------------------
 
 // Put your answer below -------------------------
+function removeDuplicates () {
+    const values = [1,2,3,4,5,4,3];
+    const uniqueValues = [...new Set(values)]; //[...] creates a shallow copy, so it does not mutate the original
+    return uniqueValues;
 
+}
 
+removeDuplicates();//calling the function
 
+//A Set is a collection of unique values. To remove duplicates from an array:
 
-
+//First, convert an array of duplicates to a Set. The new Set will implicitly remove duplicate elements.
+//Then, convert the set back to an array.
 
 
 
@@ -128,8 +136,21 @@ nested();//calling the function
 // ---------------------
 
 // Put your answer below -------------------------
+function identicalValues (arr1, arr2) {
+if (arr1.length !== arr2.length) { //use strict inequality
+    return false;
+    }
+    else {
+        for (let i=0; i < arr1.length; i++) {
 
+        if (!arr2.includes(arr1[i])) //calling includes on this array, but using a logical NOT operator or BANG operator says-"if arr.2 does NOT include"
+        return false; }
+    }
+    return true;
 
+}
+
+identicalValues([1, 2, 3, 4], [1, 2, 3, 4]);
 
 
 
